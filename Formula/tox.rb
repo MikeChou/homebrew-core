@@ -3,14 +3,14 @@ class Tox < Formula
 
   desc "Generic Python virtualenv management and test command-line tool"
   homepage "https://tox.readthedocs.org/"
-  url "https://files.pythonhosted.org/packages/fc/aa/31296c7cf387d8e1fe57c98273ee6d52c9531c07115a916e334bdf7a247f/tox-3.1.2.tar.gz"
-  sha256 "9f0cbcc36e08c2c4ae90d02d3d1f9a62231f974bcbc1df85e8045946d8261059"
+  url "https://files.pythonhosted.org/packages/ad/fe/55b245f4d4b30baafee29fe0f78dcd9eee89e0e222f4b22789f0fb84ae07/tox-3.2.1.tar.gz"
+  sha256 "eb61aa5bcce65325538686f09848f04ef679b5cd9b83cc491272099b28739600"
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "24849c8555155b0e85d9efed4106cc7589f34c30977aa77c4a52a0b67468b817" => :high_sierra
-    sha256 "30ee158b8ceeeefa725316d91602a0bd05e28f8e874406585f511164712f6795" => :sierra
-    sha256 "5b573142465631e4112bf02f770957c3f6f13c08c49e771d28b440a5880ffcc8" => :el_capitan
+    sha256 "da3eb3eaa8bac87f538da3aea7e7086791b5ccd15f2e9783ffc385dce063f0f1" => :high_sierra
+    sha256 "1040bdfc83b2e77131e04e08202ddd2f1d90b60c8b100bcbeab8db35d46cd65f" => :sierra
+    sha256 "324e2557543f10392fc947c6b34d3ff3d352a00f92504ae25bb6c994dc3bfad1" => :el_capitan
   end
 
   depends_on "python"
@@ -21,8 +21,8 @@ class Tox < Formula
   end
 
   resource "pluggy" do
-    url "https://files.pythonhosted.org/packages/11/bf/cbeb8cdfaffa9f2ea154a30ae31a9d04a1209312e2919138b4171a1f8199/pluggy-0.6.0.tar.gz"
-    sha256 "7f8ae7f5bdf75671a718d2daf0a64b7885f74510bcd98b1a0bb420eb9a9d0cff"
+    url "https://files.pythonhosted.org/packages/a1/83/ef7d976c12d67a5c7a5bc2a47f0501c926cabae9d9fcfdc26d72abc9ba15/pluggy-0.7.1.tar.gz"
+    sha256 "95eb8364a4708392bae89035f45341871286a333f749c3141c20573d2b3876e1"
   end
 
   resource "py" do

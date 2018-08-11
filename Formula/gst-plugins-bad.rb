@@ -1,13 +1,14 @@
 class GstPluginsBad < Formula
   desc "GStreamer plugins less supported, not fully tested"
   homepage "https://gstreamer.freedesktop.org/"
-  url "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.14.1.tar.xz"
-  sha256 "2a77c6908032aafdf2cd2e5823fec948f16a25c2d1497a953828d762dc20d61a"
+  url "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.14.2.tar.xz"
+  sha256 "34fab7da70994465a64468330b2168a4a0ed90a7de7e4c499b6d127c6c1b1eaf"
+  revision 1
 
   bottle do
-    sha256 "399b1ced6726d0c85bb39f3f661da278dcfafe315a51b1dbd31c7c1cf7e53464" => :high_sierra
-    sha256 "5ce657fdf7376e8fe1cfd226d424b48d376d78d9f56f6e28391f6a4954275706" => :sierra
-    sha256 "4e126ce99e66fe3742687c8262652c071aa106778ce114cdb44c815c52b69131" => :el_capitan
+    sha256 "473b9f9c10b10f8ae73f34db6481191bcde0db8943c3bb46032744077470d24c" => :high_sierra
+    sha256 "4d0393b043fd7e6d9f12c6fad71857d37e43c75a466b77cbeda13ef25b25938e" => :sierra
+    sha256 "26230d031fcbd1e026a2de06816708ebbc0a1d4d04c752add82033f690f4d0a1" => :el_capitan
   end
 
   head do
@@ -19,6 +20,7 @@ class GstPluginsBad < Formula
 
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
+  depends_on "gobject-introspection" => :build
   depends_on "gettext"
   depends_on "gst-plugins-base"
   depends_on "openssl"
@@ -48,6 +50,7 @@ class GstPluginsBad < Formula
       --disable-examples
       --disable-debug
       --disable-dependency-tracking
+      --enable-introspection=yes
     ]
 
     if build.head?

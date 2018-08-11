@@ -1,8 +1,8 @@
 class Sbt < Formula
   desc "Build tool for Scala projects"
   homepage "https://www.scala-sbt.org/"
-  url "https://piccolo.link/sbt-1.1.6.tgz"
-  sha256 "f545b530884e3abbca026df08df33d5a15892e6d98da5b8c2297413d1c7b68c1"
+  url "https://piccolo.link/sbt-1.2.1.tgz"
+  sha256 "469c899d9d878ee5ed3f0e6fdc4095da2bf4a104d4ed72bd59a817b8354ad7df"
 
   bottle :unneeded
 
@@ -28,7 +28,7 @@ class Sbt < Formula
   end
 
   def caveats;  <<~EOS
-    You can use $SBT_OPTS to pass additional JVM options to SBT.
+    You can use $SBT_OPTS to pass additional JVM options to sbt.
     Project specific options should be placed in .sbtopts in the root of your project.
     Global settings should be placed in #{etc}/sbtopts
   EOS
